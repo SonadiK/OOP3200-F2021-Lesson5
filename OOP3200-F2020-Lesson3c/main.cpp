@@ -1,3 +1,16 @@
+/*
+ * Project OOP3200 - F2021_ICE5
+* @author Sonadi Kannangara
+* @studentID  100778336
+* @version 1.0
+* @date    16 October 2021
+* Last modified date : 17 October 2021
+* Activity    ICE 5 - In Class Exercise 5
+ *
+ */
+
+ // OOP3200-F2021-ICE5.cpp : This file contains the 'main' function. Program execution begins and ends there.
+
 #include <iomanip>
 #include <iostream>
 
@@ -51,11 +64,33 @@ static void CompareGameObjects(GameObject* object1, GameObject* object2)
 
 int main()
 {
-	const Vector3D<float> point1(5.0f, 20.0f);
-	const Vector3D<float> point2(10.0f, 100.0f);
+	Vector2D point2d(200.0f, 300.0f);
 
-	std::cout << point1.ToString() <<std::endl;
-	std::cout << point2.ToString() << std::endl;
+	Vector3D<int> point1;
+	Vector3D<float> point2;
+	//Vector3D<double> point3;
+	Vector3D<float> point3(point2d);
+	//Vector3D<float> point4("4", "5", "6");
+	//Vector3D<int> point4("4", "5", "6");
+	//Vector3D<int> point4("4", "5", "6");
+	//Vector3D<char> point4("4", "5", "6");
+	Vector3D<uint8_t> point4("4", "5", "6");
+
+	std::cout << "Enter point1's Position (x, y, z): ";
+	std::cin >> point1;
+
+	std::cout << "Enter point2's Position (x, y, z): ";
+	std::cin >> point2;
+
+	/*std::cout << "Enter point4's Position (x, y, z): ";
+	std::cin >> point4;*/
+
+	std::cout << "-----------------------------------\n" <<std::endl;
+
+	std::cout << point1 <<std::endl;
+	std::cout << point2 << std::endl;
+	std::cout << point3 << std::endl;
+	std::cout << point4 << std::endl;
 
 	/*std::vector<GameObject*> gameObjects;
 
